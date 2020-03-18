@@ -87,12 +87,11 @@ table {
 
 html body {
 	margin: 2%;
-	border:2px solid aqua;
 }
 
 //******************HEADER CSS*******************
 header {
-	height: 16rem;
+	height: 20rem;
 	display:flex;
 	justify-content:space-between;
 	margin-bottom:2rem;
@@ -194,7 +193,25 @@ main {
 
 		h3{
 			.boxTitleA;
-		}
+		}//closes h3
+		
+		.schools{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+			text-align:center;
+			font-family:@aPText;
+
+			h5{
+				font-size:1.2rem;
+			}//closes h5
+
+			p{
+				font-size:1rem;
+			}//closes p
+
+		}//closes schools
 	
 	}//closes edu
 
@@ -202,4 +219,63 @@ main {
 
 //****************FOOTER CSS*********************
 
+footer{
+	display:flex;
+	justify-content:space-between;
+	height: 20rem;
 
+		.skills{
+			background-color:@bgColorA;
+			width:33%;
+			display:flex;
+			flex-direction:column;
+			justify-content:space-evenly;
+			align-items:center;
+			text-align:center;
+
+			h3{
+				.boxTitleA();
+			}//closes h3
+
+			p{
+				font-family: @aPText;
+				color: @tColor;
+				text-decoration:none;
+				font-size: 1.2rem;
+			}//closes p
+
+		}//closes skills
+
+		.contact{
+			background-color:@bgColorB;
+			width:65%;
+			display:flex;
+			flex-direction:column;
+			justify-content:space-evenly;
+			align-items:center;
+			text-align:center;
+
+			h2{
+				color: @hBColor;
+				font-family: 'Inter', sans-serif;
+				font-size: 3rem;
+				text-align: center;
+				text-transform: lowercase;
+			}//closes h2
+
+			p, a{
+				color:@hBColor;
+				font-family: @hText;
+				text-decoration:none;
+				font-size:1.6rem;
+
+				&:hover{
+					color:@bgColorA;
+					font-size:1.8rem;
+				}//closes hover
+
+			}//closes p a
+
+		}//closes contact
+
+}//closes footer
